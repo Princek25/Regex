@@ -5,12 +5,12 @@ import java.util.regex.Pattern;
 
 public class Regex {
     static Scanner sc =  new Scanner(System.in);
-    static Pattern string = Pattern.compile("^[A-Z][a-z]*$");
+    static Pattern string = Pattern.compile("^[A-Z][a-z]{3,}$");
 
     public static void main(String[] args) {
-        System.out.println("Enter your first name:- ");
-        String firstName = sc.next();
-        Matcher matcher = string.matcher(firstName);
+        System.out.println("Enter your last name:- ");
+        String lastName = sc.next();
+        Matcher matcher = string.matcher(lastName);
         if(matcher.matches()){
             System.out.println("Valid Name");
         }
