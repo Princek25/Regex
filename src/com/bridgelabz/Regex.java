@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Regex {
     static Scanner sc =  new Scanner(System.in);
-    static Pattern string = Pattern.compile("^[A-Z][a-z]*$");
+    static Pattern string = Pattern.compile("^[A-Z][a-z]{3,}$");
 
     public static void main(String[] args) {
         System.out.println("Enter your first name:- ");
