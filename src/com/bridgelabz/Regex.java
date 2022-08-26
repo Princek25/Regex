@@ -7,8 +7,8 @@ public class Regex {
     static Scanner sc =  new Scanner(System.in);
     static Pattern string = Pattern.compile("^[A-Z][a-z]{3,}$");
     static Pattern email = Pattern.compile("^[a-z+.]+@(.+)$");
-    static Pattern mobile = Pattern.compile("[91][0-9]{10}");
-    static Pattern password = Pattern.compile("^(?=.*[A-Z])[a-zA-z0-9]{8,}");
+    static Pattern mobile = Pattern.compile("[0-9]{1,2}[0-9]{10}");
+    static Pattern password = Pattern.compile("^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}");
 
     public static void main(String[] args) {
         System.out.println("Enter your first name:- ");
